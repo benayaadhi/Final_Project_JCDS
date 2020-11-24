@@ -1,0 +1,33 @@
+{% extends 'index.html' %} {% block content %}
+<center>
+    <div class="p1">
+        <b>Big Mart Prediction</b>
+    </div>
+    <br>
+    <div class="container">
+        <b>Item Weight: </b> {{Item_Weight}}<br>
+        <b>Item Visibility: </b> {{Item_Visibility}}<br>
+        <b>Item Max Retail Price: </b> {{Item_MRP}}<br>
+        <b>Year Establishment: </b> {{year}}<br>
+        <b>Item Fat : </b> {{fat}}<br>
+        <b>Outlet :</b> {{outlet}}<br>
+        <b>Outlet Size:</b>{{size}}<br>
+        <b>Outlet Location Type: </b>{{oltype}}<br>
+        <b>Outlet Type : </b>{{otype}}<br>
+        <b>Item Type</b>{{it}}<br>
+        <b>Prediction : </b> {{BigMart_pred}}<br>
+    </div>
+    <hr>
+    <a href="/db_fn" target="_self">
+        <button style="background-color: rgb(255, 90, 95); color: whitesmoke" class="btn btn-light">
+            Predict Again
+        </button>
+    </a>
+    <a href="/" target="_self">
+        <button style="background-color: rgb(255, 90, 95); color: whitesmoke" class="btn btn-light">
+            Back to Home
+        </button>
+    </a>
+</center>
+
+{% endblock %}
